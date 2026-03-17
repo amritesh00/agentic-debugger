@@ -1,0 +1,24 @@
+IndexError occurs when code tries to access an index outside list range.
+
+Fix:
+Ensure loop condition stays within list length.
+
+Example incorrect:
+for i in range(len(arr)+1)
+
+Correct:
+for i in range(len(arr))
+
+---------------------------------------
+
+NullPointerException occurs when accessing an object that is null.
+
+Fix:
+Always check if object is null before use.
+
+---------------------------------------
+
+SyntaxError occurs when code structure is invalid.
+
+Fix:
+Check missing brackets, commas, or indentation.
