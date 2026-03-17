@@ -1,4 +1,9 @@
 import streamlit as st
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from orchestrator.controller import run_debugger
 from rag.vector_store import load_documents
 
