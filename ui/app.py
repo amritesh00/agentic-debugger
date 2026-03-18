@@ -25,7 +25,7 @@ code = st.text_area("💻 Paste your code here", height=200)
 error = st.text_area("⚠️ Paste error message here", height=100)
 
 # Button
-if st.button("🚀 Analyze Code"):
+if st.button("Analyze Code"):
     
     if not code or not error:
         st.warning("Please provide both code and error message.")
@@ -36,7 +36,7 @@ if st.button("🚀 Analyze Code"):
                 explanation, ranked, verification = run_debugger(code, error)
 
                 # Error Analysis
-                st.subheader("🧠 Error Analysis")
+                st.subheader("Error Analysis")
                 st.write(explanation)
 
                 # Fixes
@@ -47,7 +47,7 @@ if st.button("🚀 Analyze Code"):
                     st.code(fix)
 
                 # Verification
-                st.subheader("✅ Verification")
+                st.subheader("Verification")
                 st.write(verification)
 
             except Exception as e:
