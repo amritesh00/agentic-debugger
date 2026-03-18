@@ -1,6 +1,3 @@
-langchain
-chromadb
 streamlit
 groq
 python-dotenv
-sentence-transformers
